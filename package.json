@@ -1,0 +1,38 @@
+{
+  "name": "@perseusfs/website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "format": "prettier --write \"**/*.ts*\" --config ./.prettierrc.json",
+    "lint": "eslint ./src/**/*.ts --ext ts --report-unused-disable-directives",
+    "lint:fix": "eslint ./src/**/*.ts --ext ts --report-unused-disable-directives --fix",
+    "check-types": "tsc --noEmit",
+    "magic": "bun --bun run lint:fix && bun --bun run format && bun --bun run check-types"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "lucide-react": "^0.525.0",
+    "next": "15.4.2",
+    "ogl": "^1.0.11",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sugar-high": "^0.9.3"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint-config-next": "15.4.2",
+    "@eslint/eslintrc": "^3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-unused-imports": "^4.1.4"
+  }
+}

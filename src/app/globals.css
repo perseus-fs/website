@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Monokai wannabe */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --sh-class: #a6e22e;
+  --sh-identifier: #f8f8f2;
+  --sh-sign: #f92672;
+  --sh-property: #66d9ef;
+  --sh-entity: #fd971f;
+  --sh-jsxliterals: #e6db74;
+  --sh-string: #e6db74;
+  --sh-keyword: #f92672;
+  --sh-comment: #75715e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
